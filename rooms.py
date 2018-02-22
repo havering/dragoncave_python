@@ -1,0 +1,31 @@
+class Room:
+	# attributes
+	def __init__(self, jewels, weapons, weapon_name, room_name, room_desc, room_id, north, south, east, west):
+		self.jewels = jewels # int
+		self.weapons = weapons #int
+		self.weapon_name = weapon_name # string
+		self.room_name = room_name # string
+		self.room_desc = room_desc # string
+		self.room_id = room_id # int
+		self.north = north # Room
+		self.south = south # Room
+		self.east = east # Room
+		self.west = west # Room
+
+
+class Player:
+	# attributes
+	def __init__(self, moves, jewels, weapons, puzzle1, puzzle2, puzzle3, weapon_names):
+		self.moves = moves # int
+		self.jewels = jewels # int
+		self.weapons = weapons # int
+		self.puzzle1 = puzzle1 # bool
+		self.puzzle2 = puzzle2 # bool
+		self.puzzle3 = puzzle3 # bool
+		self.weapon_names = weapon_names # array
+
+class Map:
+	# attributes
+	def __init__(self, start, end):
+		self.start = starter
+		self.end = end
