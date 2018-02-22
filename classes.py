@@ -15,14 +15,14 @@ class Room:
 
 class Player:
 	# attributes
-	def __init__(self, moves, jewels, weapons, puzzle1, puzzle2, puzzle3, weapon_names):
-		self.moves = moves # int
-		self.jewels = jewels # int
-		self.weapons = weapons # int
-		self.puzzle1 = puzzle1 # bool
-		self.puzzle2 = puzzle2 # bool
-		self.puzzle3 = puzzle3 # bool
-		self.weapon_names = weapon_names # array
+	def __init__(self):
+		self.moves = 0
+		self.jewels = 0
+		self.weapons = 0
+		self.puzzle1 = false
+		self.puzzle2 = false
+		self.puzzle3 = false
+		self.weapon_names = []
 
 class Map:
 	# attributes
