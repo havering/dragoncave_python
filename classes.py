@@ -26,6 +26,6 @@ class Player:
 
 class Map:
 	# attributes
-	def __init__(self, start, end):
-		self.start = starter
-		self.end = end
+	def __init__(self, starter, ender):
+		self.start = starter # Room
+		self.end = ender # Room
