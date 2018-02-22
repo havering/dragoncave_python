@@ -19,9 +19,9 @@ class Player:
 		self.moves = 0
 		self.jewels = 0
 		self.weapons = 0
-		self.puzzle1 = false
-		self.puzzle2 = false
-		self.puzzle3 = false
+		self.puzzle1 = False
+		self.puzzle2 = False
+		self.puzzle3 = False
 		self.weapon_names = []
 
 class Map:
