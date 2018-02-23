@@ -9,8 +9,10 @@ def initialize_rooms():
 	first = classes.Room(0, 0, None, "a deep cave", desc, 1, None, None, None, None)
 	# rooms.append(first)
 
-	desc = "As the light grows brighter, your eyes are caught by the gleam of metal and \njewels in the corner. \nA small pile of rubies sits on a rough rock ledge,\
-			while a dagger rests on\n the floor beneath."
+	desc = "As the light grows brighter, your eyes are caught by the gleam of metal and \
+	\njewels in the corner. A small pile of rubies sits on a rough rock ledge, while a \
+	\ndagger rests on the floor beneath."
+
 	second = classes.Room(3, 1, "a dagger", "a dimly lit cave", desc, 2, None, None, None, first)
 	first.east = second
 
@@ -21,13 +23,14 @@ def initialize_rooms():
 	second.south = third
 
 	desc = "Your relief at making it past the gnome turns to delight as you find yourself in a new cavern.\
-		    \nThis one is draped in velvet, fur, strings of jewelry, and \npiles of gold. Who would leave such riches laying about?"
+		    \nThis one is draped in velvet, fur, strings of jewelry, and piles of gold. Who would leave \
+		    \nsuch riches laying about?"
 
 	fourth = classes.Room(5, 0, None, "an opulant room", desc, 4, None, None, third, None)
 	third.west = fourth
 
-	desc = "This room in the cave is not nearly so pleasant. It smells musty and is covered\nin thick cobwebs. You do your best to pick through them.\
-			As you step to the \nsideto avoid an intact web, your foot kicks up against a locked chest. You \ndon't see a key, but as you touch the lock, a voice hums in your mind:\
+	desc = "This room in the cave is not nearly so pleasant. It smells musty and is covered\nin thick cobwebs. You do your best to pick through them. As you step to the \
+			\nsideto avoid an intact web, your foot kicks up against a locked chest. You \ndon't see a key, but as you touch the lock, a voice hums in your mind:\
 			\n'Solve a riddle to gain a reward.'"
 
 	fifth = classes.Room(4, 1, "a mace", "a cobwebbed cave", desc, 5, fourth, None, None, None)
@@ -37,8 +40,10 @@ def initialize_rooms():
 	sixth = classes.Room(0, 1, "a shield", "an armory", desc, 6, None, None, None, fifth)
 	fifth.east = sixth
 
-	desc = "There are cockroaches everywhere. Your stomach churns, and you try to ignore \nthe crunching as you stride quickly across the room.\
-			\nThe gleam of metal and jewels again catches your eye - but it is tempting \nto move on without investigating."
+	desc = "There are cockroaches everywhere. Your stomach churns, and you try to ignore \
+			\nthe crunching as you stride quickly across the room.The gleam of metal and \
+			\njewels again catches your eye - but it is tempting to move on without \
+			\ninvestigating."
 
 	seventh = classes.Room(3, 1, "a throwing star", "a cave covered in cockroaches", desc, 7, None, None, None, sixth)
 	sixth.east = seventh
@@ -50,9 +55,9 @@ def initialize_rooms():
 	eighth = classes.Room(3, 1, "a broadsword", "a cave filled with bats", desc, 8, None, seventh, None, None)
 	seventh.north = eighth
 
-	desc = "The light from the entrance, which has been growing progressively brighter, \nbeams clearly into the room as you walk in. \
-			You freeze when you \nsee a serpent blocking your path. \
-			The serpent raises its head and hisses \nat you, 'You musssst anssssswer a quessssstion iffff you want to esssscape.'"
+	desc = "The light from the entrance, which has been growing progressively brighter, \
+			\nbeams clearly into the room as you walk in. You freeze when you \
+			\nsee a serpent blocking your path. The serpent raises its head and hisses \nat you, 'You musssst anssssswer a quessssstion iffff you want to esssscape.'"
 
 	ninth = classes.Room(4, 1, "a spear", "a bright room", desc, 9, None, None, None, eighth)
 	eighth.east = ninth

@@ -14,8 +14,9 @@ def play_game(game_map):
 		# additional moves added for attempts at solving puzzles
 		dude.moves += 1
 
-		print "You find yourself in %s." % current.room_name
+		print "\nYou find yourself in %s." % current.room_name
 		print current.room_desc
+		print "\n"
 
 		# puzzle rooms
 		if (current.room_id == 3):
@@ -241,8 +242,8 @@ def dragon_room(dude):
 			# user must have 5 weapons to fight the dragon
 			print "Finally, these heavy weapons come in handy!"
 			print "You peer inside your bag - you have "
-			for item in len(dude.weapon_names):
-				print item + ", "
+			for item in dude.weapon_names:
+				print item + ", ", 
 			print "and your wits about you."
 
 			if (dude.weapons >= 5):
